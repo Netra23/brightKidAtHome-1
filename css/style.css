@@ -7096,6 +7096,14 @@ a.elementor-button:hover {
   }
 }
 
+.text_white {
+  color: white !important;
+}
+
+.text_black {
+  color: black !important;
+}
+
 .header .container {
   max-width: 100% !important;
 }

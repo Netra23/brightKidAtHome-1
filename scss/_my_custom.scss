@@ -18,6 +18,12 @@
     padding-left: 0;
   }
 }
+.text_white {
+  color: white !important;
+}
+.text_black {
+  color: black !important;
+}
 .header {
   .container {
     max-width: 100% !important;
@@ -88,34 +94,20 @@
   p {
     margin-bottom: 30px;
   }
-  box-shadow: 0 10px 20px 0 rgba(241, 88, 129, 0.6),
-    0 10px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(241, 88, 129, 0.6), 0 10px 15px 0 rgba(0, 0, 0, 0.2);
 
   transition: all 0.3s ease-in-out;
   &:hover {
     transform: translate(0, -10px);
-    background-image: linear-gradient(
-      to bottom right,
-      rgba(255, 56, 109, 0.8),
-      rgb(255, 91, 79)
-    );
-    box-shadow: 0 20px 40px 0 rgba(238, 14, 74, 0.8),
-      0 10px 40px 0 rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(to bottom right, rgba(255, 56, 109, 0.8), rgb(255, 91, 79));
+    box-shadow: 0 20px 40px 0 rgba(238, 14, 74, 0.8), 0 10px 40px 0 rgba(0, 0, 0, 0.6);
   }
 }
 .contact_page_bg {
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(255, 56, 109, 0.8),
-    rgb(255, 91, 79)
-  );
+  background-image: linear-gradient(to bottom right, rgba(255, 56, 109, 0.8), rgb(255, 91, 79));
 }
 .contact_page_bg_2 {
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(218, 255, 55, 0.8),
-    rgba(225, 238, 154, 0.8)
-  );
+  background-image: linear-gradient(to bottom right, rgba(218, 255, 55, 0.8), rgba(225, 238, 154, 0.8));
 }
 
 .banner_style_3 {
@@ -178,11 +170,7 @@
 }
 .cta_custom {
   // background-color: black;
-  background-image: linear-gradient(
-    to top left,
-    rgb(236, 248, 168),
-    rgb(229, 255, 79)
-  );
+  background-image: linear-gradient(to top left, rgb(236, 248, 168), rgb(229, 255, 79));
 }
 .instaCont {
   width: 90vw;
@@ -366,11 +354,9 @@
   display: block;
 }
 .what_we_offer_cards {
-  box-shadow: 0 10px 20px 0 rgba(241, 88, 129, 0.6),
-    0 10px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(241, 88, 129, 0.6), 0 10px 15px 0 rgba(0, 0, 0, 0.2);
   &:hover {
-    box-shadow: 0 30px 30px 0 rgba(241, 88, 129, 0.6),
-      0 10px 15px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 30px 30px 0 rgba(241, 88, 129, 0.6), 0 10px 15px 0 rgba(0, 0, 0, 0.5);
   }
 }
 .img_section_parent_early_education {
@@ -461,7 +447,7 @@
 
 .purple_bg {
   // background-color: #b5d6fb;
- background-color: #f3eeff; 
+  background-color: #f3eeff;
 }
 
 .orange_bg {
@@ -472,5 +458,4 @@
 .vertical-center {
   vertical-align: middle;
   text-align: unset;
-
 }

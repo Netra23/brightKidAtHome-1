@@ -1,3 +1,22 @@
+function toggleKnowMore() {
+  var toggleList = document.getElementById("toggleReadMore");
+  let knowMoreText = document.getElementById("knowMore");
+  if (toggleList.style.display === "none") {
+    toggleList.style.display = "block";
+    knowMoreText.textContent = "Read Less";
+  } else {
+    toggleList.style.display = "none";
+    knowMoreText.textContent = "Know More";
+  }
+}
+$(function () {
+  $(".showSingle").click(function () {
+    $(".list_content_2")
+      .not("#toggle" + $(this).attr("target"))
+      .hide();
+    $("#toggle" + $(this).attr("target")).toggle();
+  });
+});
 function AddReadMore() {
   //This limit you can set after how much characters you want to show Read More.
   let carLmt = 280;
@@ -11,10 +30,7 @@ function AddReadMore() {
     if ($(this).find(".firstSec").length) return;
 
     let allstr = $(this).text();
-    if (
-      (allstr.length > carLmt && window.innerWidth <= 720) ||
-      ($(this).hasClass("desktopReadMore") && allstr.length > carLmt)
-    ) {
+    if ((allstr.length > carLmt && window.innerWidth <= 720) || ($(this).hasClass("desktopReadMore") && allstr.length > carLmt)) {
       let firstSet = allstr.substring(0, carLmt);
       let secdHalf = allstr.substring(carLmt, allstr.length);
       let strtoadd =
@@ -31,9 +47,7 @@ function AddReadMore() {
   });
   //Read More and Read Less Click Event binding
   $(document).on("click", ".readMore,.readLess", function () {
-    $(this)
-      .closest(".addReadMore")
-      .toggleClass("showlesscontent showmorecontent");
+    $(this).closest(".addReadMore").toggleClass("showlesscontent showmorecontent");
   });
 }
 $(function () {
@@ -102,10 +116,7 @@ $(function () {
       items: 1,
       loop: true,
       nav: true,
-      navText: [
-        "<i class='ti-angle-left'></i>",
-        "<i class='ti-angle-right'></i>",
-      ],
+      navText: ["<i class='ti-angle-left'></i>", "<i class='ti-angle-right'></i>"],
       dots: false,
       autoplay: true,
       autoplayHoverPause: true,
@@ -187,9 +198,7 @@ $(function () {
       var days = Math.floor(timeLeft / 86400);
       var hours = Math.floor((timeLeft - days * 86400) / 3600);
       var minutes = Math.floor((timeLeft - days * 86400 - hours * 3600) / 60);
-      var seconds = Math.floor(
-        timeLeft - days * 86400 - hours * 3600 - minutes * 60
-      );
+      var seconds = Math.floor(timeLeft - days * 86400 - hours * 3600 - minutes * 60);
       if (hours < "10") {
         hours = "0" + hours;
       }
@@ -313,10 +322,7 @@ $(function () {
       var element_height = $element.outerHeight();
       var element_top_position = $element.offset().top;
       var element_bottom_position = element_top_position + element_height;
-      if (
-        element_bottom_position >= window_top_position &&
-        element_top_position <= window_bottom_position
-      ) {
+      if (element_bottom_position >= window_top_position && element_top_position <= window_bottom_position) {
         $element.addClass("is_show");
       }
     });
