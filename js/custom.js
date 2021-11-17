@@ -1,11 +1,13 @@
+//readMore Card Function
 $(function () {
   $(".showSingle").click(function () {
-    $(".list_content_2")
+    $(".toggleClass")
       .not("#toggle" + $(this).attr("target"))
       .hide();
     $("#toggle" + $(this).attr("target")).toggle();
   });
 });
+
 function AddReadMore() {
   //This limit you can set after how much characters you want to show Read More.
   let carLmt = 280;
