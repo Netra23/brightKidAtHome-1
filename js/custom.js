@@ -1,14 +1,3 @@
-function toggleKnowMore() {
-  var toggleList = document.getElementById("toggleReadMore");
-  let knowMoreText = document.getElementById("knowMore");
-  if (toggleList.style.display === "none") {
-    toggleList.style.display = "block";
-    knowMoreText.textContent = "Read Less";
-  } else {
-    toggleList.style.display = "none";
-    knowMoreText.textContent = "Know More";
-  }
-}
 $(function () {
   $(".showSingle").click(function () {
     $(".list_content_2")
