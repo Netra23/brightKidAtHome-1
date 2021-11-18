@@ -1,4 +1,19 @@
 //readMore Card Function
+
+$(function () {
+  $(".readSingle").click(function () {
+    $(".toggleClass")
+      .not("#toggle" + $(this).attr("target"))
+      .hide();
+    $("#toggle" + $(this).attr("target")).toggle();
+    if ($("#toggle" + $(this).attr("target")).is(":visible")) {
+      $("#knowMore" + $(this).attr("target")).text("Read Less");
+    } else {
+      $("#knowMore" + $(this).attr("target")).text("Read More ...");
+    }
+  });
+});
+
 $(function () {
   $(".showSingle").click(function () {
     $(".toggleClass")
