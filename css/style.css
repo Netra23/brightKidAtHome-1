@@ -7559,6 +7559,18 @@ a.elementor-button:hover {
   background-color: #f8e5be;
 }
 
+.nursery_plan_card {
+  background-color: #eeffae;
+}
+
+.lkg_plan_card {
+  background-color: #b9fcff;
+}
+
+.ukg_plan_card {
+  background-color: #fad3e2;
+}
+
 .video_section_custom {
   position: relative;
 }
