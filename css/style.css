@@ -5905,7 +5905,7 @@ a.elementor-button:hover {
 }
 .single_event_part .playgroup_card_icon {
   margin-bottom: 30px;
-  height: 230px;
+  height: 85%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7515,7 +7515,6 @@ a.elementor-button:hover {
   height: 25px;
   width: 25px;
   position: absolute;
-  background: white;
   z-index: 1;
   transform: rotate(45deg);
   left: 30px;
@@ -7554,6 +7553,10 @@ a.elementor-button:hover {
 .vertical-center {
   vertical-align: middle;
   text-align: unset;
+}
+
+.playgroup_plan_card {
+  background-color: #F8E5BE;
 }
 
 /*# sourceMappingURL=style.css.map */
