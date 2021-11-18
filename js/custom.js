@@ -5,6 +5,11 @@ $(function () {
       .not("#toggle" + $(this).attr("target"))
       .hide();
     $("#toggle" + $(this).attr("target")).toggle();
+    if ($("#toggle" + $(this).attr("target")).is(":visible")) {
+      $("#knowMore" + $(this).attr("target")).text("Read Less");
+    } else {
+      $("#knowMore" + $(this).attr("target")).text("Know More");
+    }
   });
 });
 
